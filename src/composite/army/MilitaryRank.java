@@ -1,6 +1,8 @@
 package composite.army;
 
 /**
+ * 军队
+ *
  * Created by Administrator on 2018/7/18 0018.
  */
 public enum MilitaryRank {

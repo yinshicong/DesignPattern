@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 司令
+ *
  * Created by Administrator on 2018/7/18 0018.
  */
 public class Commander extends Warrior {
 
+    //司令下面有可以有很多战士
     private List<Warrior> warriors = new ArrayList<>();
 
     public Commander() {

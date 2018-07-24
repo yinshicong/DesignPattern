@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 团长
+ *
  * Created by Administrator on 2018/7/18 0018.
  */
 public class Head extends Warrior{
 
+    //团长手下的战士
     private List<Warrior> warriors = new ArrayList<>();
 
     public Head() {

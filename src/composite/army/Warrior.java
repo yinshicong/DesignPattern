@@ -3,14 +3,16 @@ package composite.army;
 import java.util.List;
 
 /**
+ * 对于军队来说每一个人都是战士
+ *
  * Created by Administrator on 2018/7/18 0018.
  */
 public abstract class Warrior {
 
+    //每个战士都有自己的头衔
     protected MilitaryRank militaryRank;
 
-    protected int size;
-
+    //每个人都有姓名
     private String name;
 
     public String getName() {
@@ -19,14 +21,6 @@ public abstract class Warrior {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 
     public Warrior(MilitaryRank militaryRank) {
@@ -45,6 +39,7 @@ public abstract class Warrior {
         this.militaryRank = militaryRank;
     }
 
+    //打印出自己下属军队的结构
     public abstract void printList(String prefix,StringBuilder stringBuilder);
 
     @Override
